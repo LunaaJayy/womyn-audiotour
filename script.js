@@ -9,8 +9,11 @@ const afspeelButton = document.querySelector(".playbutton")
 let startscherm = document.querySelector(".startscherm");
 let dagscherm = document.querySelector(".dag");
 let fotoArray = [
-    "images/test.png",
-    "images/test2.jpg"
+    "images/test.png", "dagen/dag1.png", "dagen/dag2.png", "dagen/dag3.png", "dagen/dag4.png", "dagen/dag5.png", "dagen/dag6.png", 
+    "images/test.png", "dagen/dag7.png", "dagen/dag8.png", "dagen/dag9.png", "dagen/dag10.png", "dagen/dag11.png", "dagen/dag12.png", 
+    "images/test.png", "dagen/dag13.png", "dagen/dag14.png", "dagen/dag15.png", "dagen/dag16.png", "dagen/dag17.png", "dagen/dag18.png", 
+    "dagen/dag19.png", "dagen/dag20.png", "images/test.png", "dagen/dag21.png", "dagen/dag22.png", "dagen/dag23.png", "dagen/dag24.png",
+    "dagen/dag25.png", "dagen/dag26.png", "dagen/dag27.png", "dagen/dag28.png"
 ];
 let titelArray = [
     "Winter", "Dag 1", "Dag 2", "Dag 3", "Dag 4", "Dag 5", "Dag 6", 
