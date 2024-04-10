@@ -13,10 +13,10 @@ let fotoArray = [
     "images/test2.jpg"
 ];
 let titelArray = [
-    "Dag 1", "Dag 2", "Dag 3", "Dag 4", "Dag 5", "Dag 6", 
-    "Dag 7", "Dag 8", "Dag 9", "Dag 10", "Dag 11", "Dag 12", 
-    "Dag 13", "Dag 14", "Dag 15", "Dag 16", "Dag 17", "Dag 18", 
-    "Dag 19", "Dag 20", "Dag 21", "Dag 22", "Dag 23", "Dag 24",
+    "Winter", "Dag 1", "Dag 2", "Dag 3", "Dag 4", "Dag 5", "Dag 6", 
+    "Lente", "Dag 7", "Dag 8", "Dag 9", "Dag 10", "Dag 11", "Dag 12", 
+    "Zomer", "Dag 13", "Dag 14", "Dag 15", "Dag 16", "Dag 17", "Dag 18", 
+    "Dag 19", "Dag 20", "Herfst", "Dag 21", "Dag 22", "Dag 23", "Dag 24",
     "Dag 25", "Dag 26", "Dag 27", "Dag 28"
 ];
 
@@ -43,12 +43,14 @@ function toonFotoEnTitel() {
     audioElement.src = audioSRC;
 }
 
+
 function naarLinks() {
     if (huidigeIndex > 0) {
         huidigeIndex--;
         toonFotoEnTitel();
     }
 }
+
 
 function naarRechts() {
     if (huidigeIndex < fotoArray.length - 1){
@@ -60,6 +62,8 @@ function naarRechts() {
 function speelAudio() {
     audioElement.play()
 }
+
+
 
 startknop.addEventListener('click', starten)
 pijlLinks.addEventListener('click', naarLinks)
