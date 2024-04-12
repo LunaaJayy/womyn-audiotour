@@ -43,7 +43,7 @@ p {
 .foto-met-pijl img:nth-of-type(2) {
     width: 55vw;
     height: auto;
-    border: #9B1B1B solid .1em;
+    /* border: #9B1B1B solid .1em; */
 }
 
 .foto-met-pijl img:nth-of-type(1), .foto-met-pijl img:nth-of-type(3) {
