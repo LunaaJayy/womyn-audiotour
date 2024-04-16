@@ -9,10 +9,10 @@ const afspeelButton = document.querySelector(".playbutton")
 let startscherm = document.querySelector(".startscherm");
 let dagscherm = document.querySelector(".dag");
 let fotoArray = [
-    "images/vierkant.png", "images/test.png", "dagen/dag1.png", "dagen/dag2.png", "dagen/dag3.png", "dagen/dag4.png", "dagen/dag5.png", "dagen/dag6.png", 
+    "images/vierkant.png", "dagen/dag4.png", "dagen/dag1.png", "dagen/dag2.png", "dagen/dag3.png", "dagen/dag4.png", "dagen/dag5.png", "dagen/dag6.png", 
     "dagen/lente.png", "dagen/dag7.png", "dagen/dag8.png", "dagen/dag9.png", "dagen/dag10.png", "dagen/dag11.png", "dagen/dag12.png", 
     "dagen/zomer.png", "dagen/dag13.png", "dagen/dag14.png", "dagen/dag15.png", "dagen/dag16.png", "dagen/dag17.png", "dagen/dag18.png", 
-    "dagen/dag19.png", "dagen/dag20.png", "images/test.png", "dagen/dag21.png", "dagen/dag22.png", "dagen/dag23.png", "dagen/dag24.png",
+    "dagen/dag19.png", "dagen/dag20.png", "dagen/dag25.png", "dagen/dag21.png", "dagen/dag22.png", "dagen/dag23.png", "dagen/dag24.png",
     "dagen/dag25.png", "dagen/dag26.png", "dagen/dag27.png", "dagen/dag28.png", "images/vierkant.png"
 ];
 let titelArray = [
@@ -20,7 +20,7 @@ let titelArray = [
     "Lente", "Dag 7", "Dag 8", "Dag 9", "Dag 10", "Dag 11", "Dag 12", 
     "Zomer", "Dag 13", "Dag 14", "Dag 15", "Dag 16", "Dag 17", "Dag 18", 
     "Dag 19", "Dag 20", "Herfst", "Dag 21", "Dag 22", "Dag 23", "Dag 24",
-    "Dag 25", "Dag 26", "Dag 27", "Dag 28", "Outro"
+    "Dag 25", "Dag 26", "Dag 27", "Dag 28", "Als laatste.."
 ];
 
 let audioArray = [
@@ -38,7 +38,7 @@ function starten () {
     startscherm.classList.add("hidden");
     dagscherm.classList.remove("hidden");
     toonFotoEnTitel();
-}
+};
 
 function toonFotoEnTitel() {
     const fotoSRC = fotoArray[huidigeIndex];
@@ -61,7 +61,7 @@ function toonFotoEnTitel() {
         pijlLinks.src = "images/pijltje-links.png"
         pijlRechts.src = "images/pijltje-rechts.png"
     }
-}
+};
 
 
 function naarLinks() {
@@ -69,7 +69,7 @@ function naarLinks() {
         huidigeIndex--;
         toonFotoEnTitel();
     }
-}
+};
 
 
 function naarRechts() {
@@ -77,7 +77,7 @@ function naarRechts() {
         huidigeIndex++;
         toonFotoEnTitel();
     }
-}
+};
 
 function speelAudio() {
     if(audioElement.paused){
@@ -87,7 +87,7 @@ function speelAudio() {
         audioElement.pause();
         afspeelButton.src = "images/playbutton.png"
       }
-}
+};
 
 
 startknop.addEventListener('click', starten)
