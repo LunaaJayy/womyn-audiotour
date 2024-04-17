@@ -54,9 +54,6 @@ function toonFotoEnTitel() {
         pijlLinks.src = "images/pijl-wit.png"
         console.log("ghello?")
     }
-    else if (dagTitel === "Outro") {
-        pijlRechts.src = "images/pijl-wit.png"
-    } 
     else {
         pijlLinks.src = "images/pijltje-links.png"
         pijlRechts.src = "images/pijltje-rechts.png"
@@ -76,6 +73,10 @@ function naarRechts() {
     if (huidigeIndex < fotoArray.length - 1){
         huidigeIndex++;
         toonFotoEnTitel();
+    
+        if (titelArray[huidigeIndex] === "Als laatste..") {
+            location.reload();
+        }
     }
 };
 
